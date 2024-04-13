@@ -1,38 +1,240 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 30px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  z-index: 1000;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(85, 85, 85, 0.8));
+}
+
+.sticky {
+  position: fixed;
+}
+
+.main-content {
+  padding-top: 70px; /* Adjust based on navbar height */
+}
+
+/* Add your existing styles below */
+
+
+.normal {
+  background: linear-gradient(135deg, #5333ed, #20a0ff); /* Change to solid or gradient color */
+}
+
+.slider-container {
+  position: relative;
+  z-index: 1; /* Lower z-index to ensure it's below the navbar */
+}
+
+
+
+.company-name {
+  font-size: 24px;
   color: white;
+  font-family: 'Arial', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.App-link {
-  color: #61dafb;
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 0px; /* Add gap between the buttons */
 }
 
-@keyframes App-logo-spin {
+.nav-links li {
+  margin-right: 35px;
+}
+
+
+
+.nav-links button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-family: 'Arial', sans-serif;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.nav-links button:hover {
+  color: #11ff00;
+  transform: translateY(-2px);
+}
+
+.nav-links button:focus {
+  outline: none;
+}
+
+/* Add animation for navbar */
+@keyframes slideInTop {
   from {
-    transform: rotate(0deg);
+    transform: translateY(-50px);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    transform: translateY(0);
+    opacity: 1;
   }
+}
+
+.navbar {
+  animation: slideInTop 0.5s ease-in-out;
+}
+
+/* Additional styles for slider */
+.slider-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -80px;
+}
+
+
+.slide-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  flex: 0 0 auto;
+  opacity: 0;
+  transition: opacity 0.5s ease; /* Add fading animation */
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.image {
+  width: 98.7vw; /* Use viewport width to cover the entire screen horizontally */
+  height: auto;
+  max-height: 650px; /* Adjust the maximum height as needed */
+  object-fit: cover; /* Cover the entire slide area */
+  border-radius: 10px;
+  transition: transform 0.5s ease; /* Smooth transition when the image changes */
+}
+
+.centered-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+
+
+.text {
+  position: absolute;
+  bottom: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.left-arrow,
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  background-color: transparent;
+  color: white;
+  font-size: 24px;
+  z-index: 1;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for arrow hover effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+  transform: scale(1.1); /* Enlarge the arrow on hover */
+  background-color: rgba(255, 255, 255, 0.3); /* Change arrow background color on hover */
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+.content-below-slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+  opacity: 0; /* Initially hide the content */
+  transition: opacity 0.5s ease; /* Apply transition effect for smooth appearance */
+}
+
+.content-below-slider.show {
+  opacity: 1; /* Show the content when the show class is applied */
+}
+
+
+.left-content {
+  flex: 1;
+  padding: 0 20px;
+  text-align: center; /* Center the text */
+}
+
+.left-content p {
+  font-size: 24px; /* Increase text size */
+  font-family: 'Arial', sans-serif; /* Change font family */
+}
+
+
+.right-content {
+  flex: 1;
+  padding: 0 20px;
+  text-align: right;
+}
+
+.right-content img {
+  max-width: 100%; /* Ensure images scale down responsively */
+  max-height: 500px; /* Set maximum height for the images */
+  width: auto;
+  height: auto;
+  border-radius: 50px;
+  transition: transform 0.5s ease;
+}
+
+.left-content,
+.right-content {
+  opacity: 0;
+  animation: fadeInOut 1s forwards; /* Apply animation */
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.content-below-slider.show .left-content,
+.content-below-slider.show .right-content {
+  animation-delay: 2s; /* Delay the animation */
 }
