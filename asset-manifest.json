@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/flavorfulzenith/static/css/main.9b5f4f2c.css",
+    "main.css": "/flavorfulzenith/static/css/main.822cdfdd.css",
     "main.js": "/flavorfulzenith/static/js/main.f2355f0e.js",
     "static/js/453.15a1befc.chunk.js": "/flavorfulzenith/static/js/453.15a1befc.chunk.js",
     "static/media/pizza.webp": "/flavorfulzenith/static/media/pizza.c8a1369e05b902da28bc.webp",
@@ -8,12 +8,12 @@
     "static/media/sushi.webp": "/flavorfulzenith/static/media/sushi.7a03addb90999ed647ed.webp",
     "static/media/burger.webp": "/flavorfulzenith/static/media/burger.196c7f981464450a1205.webp",
     "index.html": "/flavorfulzenith/index.html",
-    "main.9b5f4f2c.css.map": "/flavorfulzenith/static/css/main.9b5f4f2c.css.map",
+    "main.822cdfdd.css.map": "/flavorfulzenith/static/css/main.822cdfdd.css.map",
     "main.f2355f0e.js.map": "/flavorfulzenith/static/js/main.f2355f0e.js.map",
     "453.15a1befc.chunk.js.map": "/flavorfulzenith/static/js/453.15a1befc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b5f4f2c.css",
+    "static/css/main.822cdfdd.css",
     "static/js/main.f2355f0e.js"
   ]
 }
