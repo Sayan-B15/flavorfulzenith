@@ -1,3 +1,5 @@
+/* Common styles for both PC and mobile */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -10,28 +12,6 @@
   z-index: 1000;
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(85, 85, 85, 0.8));
 }
-
-.sticky {
-  position: fixed;
-}
-
-.main-content {
-  padding-top: 70px; /* Adjust based on navbar height */
-}
-
-/* Add your existing styles below */
-
-
-.normal {
-  background: linear-gradient(135deg, #5333ed, #20a0ff); /* Change to solid or gradient color */
-}
-
-.slider-container {
-  position: relative;
-  z-index: 1; /* Lower z-index to ensure it's below the navbar */
-}
-
-
 
 .company-name {
   font-size: 24px;
@@ -51,8 +31,6 @@
 .nav-links li {
   margin-right: 35px;
 }
-
-
 
 .nav-links button {
   background: none;
@@ -75,43 +53,13 @@
   outline: none;
 }
 
-/* Add animation for navbar */
-@keyframes slideInTop {
-  from {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.navbar {
-  animation: slideInTop 0.5s ease-in-out;
-}
-
 /* Additional styles for slider */
 .slider-container {
+  position: relative;
+  z-index: 1; /* Lower z-index to ensure it's below the navbar */
   display: flex;
   justify-content: center;
   margin-top: -80px;
-}
-
-
-.slide-wrapper {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.slide {
-  flex: 0 0 auto;
-  opacity: 0;
-  transition: opacity 0.5s ease; /* Add fading animation */
-}
-
-.slide.active {
-  opacity: 1;
 }
 
 .image {
@@ -128,7 +76,6 @@
   margin-bottom: 20px;
   font-size: 35px;
 }
-
 
 .text {
   position: absolute;
@@ -191,7 +138,6 @@
   opacity: 1; /* Show the content when the show class is applied */
 }
 
-
 .left-content {
   flex: 1;
   padding: 0 20px;
@@ -202,7 +148,6 @@
   font-size: 24px; /* Increase text size */
   font-family: 'Arial', sans-serif; /* Change font family */
 }
-
 
 .right-content {
   flex: 1;
@@ -237,4 +182,46 @@
 .content-below-slider.show .left-content,
 .content-below-slider.show .right-content {
   animation-delay: 2s; /* Delay the animation */
+}
+
+/* Media queries for responsive design */
+
+@media only screen and (max-width: 768px) {
+  /* Adjustments for mobile devices */
+
+  .navbar {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .company-name {
+    font-size: 20px; /* Decrease font size for mobile */
+  }
+
+  .nav-links {
+    flex-direction: column; /* Arrange links vertically for mobile */
+  }
+
+  .nav-links li {
+    margin-right: 0; /* Remove right margin for mobile */
+    margin-bottom: 10px; /* Add bottom margin for spacing */
+  }
+
+  .main-content {
+    padding-top: 60px; /* Adjust padding to accommodate navbar */
+  }
+
+  .image {
+    max-height: 300px; /* Adjust maximum height for mobile */
+  }
+
+  .text {
+    bottom: 10px; /* Adjust text position for mobile */
+  }
+
+  .left-arrow,
+  .right-arrow {
+    width: 30px; /* Adjust arrow size for mobile */
+    height: 30px; /* Adjust arrow size for mobile */
+    font-size: 18px; /* Adjust arrow size for mobile */
+  }
 }
