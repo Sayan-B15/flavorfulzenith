@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/flavorfulzenith/static/css/main.822cdfdd.css",
-    "main.js": "/flavorfulzenith/static/js/main.f2355f0e.js",
+    "main.css": "/flavorfulzenith/static/css/main.7357b958.css",
+    "main.js": "/flavorfulzenith/static/js/main.200e0bd9.js",
     "static/js/453.15a1befc.chunk.js": "/flavorfulzenith/static/js/453.15a1befc.chunk.js",
-    "static/media/pizza.webp": "/flavorfulzenith/static/media/pizza.c8a1369e05b902da28bc.webp",
+    "static/media/pizza.jpg": "/flavorfulzenith/static/media/pizza.1a224909a0b1e60e8a12.jpg",
+    "static/media/menupage0.jpeg": "/flavorfulzenith/static/media/menupage0.08080548f38d7812d0aa.jpeg",
+    "static/media/menupage1.jpeg": "/flavorfulzenith/static/media/menupage1.8e48925fd9639b031e74.jpeg",
     "static/media/restimg.jpg": "/flavorfulzenith/static/media/restimg.bde78275e79cc862f9d1.jpg",
     "static/media/sushi.webp": "/flavorfulzenith/static/media/sushi.7a03addb90999ed647ed.webp",
     "static/media/burger.webp": "/flavorfulzenith/static/media/burger.196c7f981464450a1205.webp",
     "index.html": "/flavorfulzenith/index.html",
-    "main.822cdfdd.css.map": "/flavorfulzenith/static/css/main.822cdfdd.css.map",
-    "main.f2355f0e.js.map": "/flavorfulzenith/static/js/main.f2355f0e.js.map",
+    "main.7357b958.css.map": "/flavorfulzenith/static/css/main.7357b958.css.map",
+    "main.200e0bd9.js.map": "/flavorfulzenith/static/js/main.200e0bd9.js.map",
     "453.15a1befc.chunk.js.map": "/flavorfulzenith/static/js/453.15a1befc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.822cdfdd.css",
-    "static/js/main.f2355f0e.js"
+    "static/css/main.7357b958.css",
+    "static/js/main.200e0bd9.js"
   ]
 }
