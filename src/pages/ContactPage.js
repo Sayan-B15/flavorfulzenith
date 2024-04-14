@@ -1,9 +1,8 @@
 import React from 'react';
 
-
 function ContactPage() {
   return (
-    <div className="main-content"> {/* Add main-content wrapper */}
+    <div className="main-content contact-page"> {/* Add main-content wrapper and contact-page class */}
      
       <h1>Contact Us</h1>
       <p>For reservations or inquiries, please fill out the form below or contact us at:</p>

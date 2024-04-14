@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import ImageSlider from "../components/ImageSlider";
-import pizzaImage from "../images/pizza.webp";
+import pizzaImage from "../images/pizza.jpg";
 import burgerImage from "../images/burger.webp";
 import sushiImage from "../images/sushi.webp";
 import restImage from "../pages/restimg.jpg";
 
 const slides = [
-  { image: pizzaImage, text: "Delicious Pizza" },
-  { image: burgerImage, text: "Tasty Burger" },
-  { image: sushiImage, text: "Exquisite Sushi" },
+  { image: pizzaImage, text: "Satisfy Your Cravings, Feed Your Soul" },
+  { image: burgerImage, text: "Where Every Bite Is a Celebration" },
+  { image: sushiImage, text: "Creating Memories, One Dish at a Time" },
 ];
 
 const HomePage = () => {

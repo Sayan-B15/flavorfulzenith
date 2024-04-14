@@ -1,30 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
+import menupage0 from './menupage0.jpeg'; // Import image for page 0
+import menupage1 from './menupage1.jpeg'; // Import image for page 1
 
+const MenuPage = () => {
+  const [currentPage, setCurrentPage] = useState(0);
+  const [isTurningPage, setIsTurningPage] = useState(false);
 
-function MenuPage() {
+  const handleImageClick = () => {
+    if (!isTurningPage) {
+      setIsTurningPage(true);
+      setTimeout(() => {
+        setCurrentPage((prevPage) => (prevPage === 1 ? 0 : prevPage + 1));
+        setIsTurningPage(false);
+      }, 500); // Adjust the duration of the animation as needed
+    }
+  };
+
   return (
-    <div className="main-content"> {/* Add main-content wrapper */}
-      
-      <h1>Menu</h1>
-      <section>
-        <h2>Appetizers</h2>
-        <ul>
-          <li>Appetizer 1 - $10</li>
-          <li>Appetizer 2 - $12</li>
-          {/* Add more items */}
-        </ul>
-      </section>
-      <section>
-        <h2>Main Courses</h2>
-        <ul>
-          <li>Main Course 1 - $20</li>
-          <li>Main Course 2 - $25</li>
-          {/* Add more items */}
-        </ul>
-      </section>
-      {/* Add sections for other menu categories */}
+    <div className="menu-page">
+      <img
+        src={currentPage === 0 ? menupage0 : menupage1}
+        alt={`Menu Page ${currentPage}`}
+        className={isTurningPage ? 'turning' : ''}
+        onClick={handleImageClick}
+      />
     </div>
   );
-}
+};
 
 export default MenuPage;
