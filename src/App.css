@@ -1,4 +1,4 @@
-/* Common styles for both PC and mobile */
+@import 'animate.css/animate.min.css';
 .navbar {
   position: fixed;
   top: 0;
@@ -55,19 +55,56 @@
 /* Additional styles for slider */
 .slider-container {
   position: relative;
-  z-index: 1; /* Lower z-index to ensure it's below the navbar */
+  z-index: 1;
   display: flex;
   justify-content: center;
   margin-top: -80px;
+  overflow: hidden; /* Ensure the background color does not overflow */
+  border-radius: 10px; /* Apply border-radius directly to the container */
+  background-color: rgba(0, 0, 0, 0); /* Adjust the opacity value to make it darker */
 }
 
+
 .image {
-  width: 98.7vw; /* Use viewport width to cover the entire screen horizontally */
+  width: 98.7vw;
   height: auto;
-  max-height: 650px; /* Adjust the maximum height as needed */
-  object-fit: cover; /* Cover the entire slide area */
+  max-height: 700px;
+  object-fit: cover;
+  border-radius: 10px; /* Apply border-radius to the image */
+  position: relative;
+  transition: transform 0.5s ease;
+  animation: animate__fadeIn 1s;
+  animation-fill-mode: both;
+  filter: brightness(30%);
+}
+
+.image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust the last value (0.7) for opacity */
   border-radius: 10px;
-  transition: transform 0.5s ease; /* Smooth transition when the image changes */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .centered-title {
@@ -78,16 +115,21 @@
 
 .text {
   position: absolute;
-  bottom: 200px;
+  bottom: 235px;
   left: 50%;
   transform: translateX(-50%);
-  width: 90%;
-  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 2rem;
+  font-weight: bold; /* Add bold font weight */
   color: white;
-  padding: 10px;
-  box-sizing: border-box;
+  padding: 20px; /* Increase padding for better visibility */
+  background-color: transparent; /* Darken the background slightly */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  border-radius: 10px; /* Increase border radius for softer edges */
   text-align: center;
-  border-radius: 5px;
+  line-height: 1.2; /* Adjust line height for better readability */
+  animation: animate__fadeIn 1s;
+  animation-fill-mode: both;
+  z-index: 10;
 }
 
 .left-arrow,

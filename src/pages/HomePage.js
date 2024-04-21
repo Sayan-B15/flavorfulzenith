@@ -6,9 +6,18 @@ import sushiImage from "../images/sushi.webp";
 import restImage from "../pages/restimg.jpg";
 
 const slides = [
-  { image: pizzaImage, text: "Satisfy Your Cravings, Feed Your Soul" },
-  { image: burgerImage, text: "Where Every Bite Is a Celebration" },
-  { image: sushiImage, text: "Creating Memories, One Dish at a Time" },
+  {
+    image: pizzaImage,
+    text: "Celebrate the Magic of Food, Where Every Flavor, Texture, and Aroma is a Symphony of Sensory Delight",
+  },
+  {
+    image: burgerImage,
+    text: "Immerse Yourself in a World of Culinary Wonders, Where Every Meal is an Expression of Love and Creativity",
+  },
+  {
+    image: sushiImage,
+    text: "Tantalize Your Taste Buds with a Gastronomic Extravaganza, Where Each Dish is a Masterpiece in Itself",
+  },
 ];
 
 const HomePage = () => {
@@ -55,12 +64,13 @@ const HomePage = () => {
             Flavourful Zenith has been a beacon of culinary delight for four
             decades. A cozy, relaxing space combined with an array of
             palate-pleasing dishes makes it the top choice for every food
-            enthusiast in town.<br></br> <br></br> We offer a wide range of cuisines and dishes,
-            ensuring that every visitor experiences culinary bliss.<br></br> <br></br> Renowned as
-            the premier Mughlai eatery in Kolkata, Flavourful Zenith has
-            consistently captured the hearts of our patrons with delectable
-            dishes and warm hospitality. It remains the ultimate destination for
-            those seeking top-quality cuisine at affordable prices.
+            enthusiast in town.<br></br> <br></br> We offer a wide range of
+            cuisines and dishes, ensuring that every visitor experiences
+            culinary bliss.<br></br> <br></br> Renowned as the premier Mughlai
+            eatery in Kolkata, Flavourful Zenith has consistently captured the
+            hearts of our patrons with delectable dishes and warm hospitality.
+            It remains the ultimate destination for those seeking top-quality
+            cuisine at affordable prices.
           </p>
         </div>
         <div className="right-content">

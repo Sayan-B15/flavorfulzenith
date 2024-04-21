@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import LazyLoad from 'react-lazyload';
+import 'animate.css/animate.min.css';
 
 const ImageSlider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
@@ -15,7 +17,7 @@ const ImageSlider = ({ slides }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 3500); // Change slide every 5 seconds
+    }, 5000); // Change slide every 5 seconds
 
     return () => clearInterval(interval);
   }, [current]);
@@ -31,21 +33,23 @@ const ImageSlider = ({ slides }) => {
       </button>
       <div className="slide-wrapper">
         {slides.map((slide, index) => (
-          <div
-            className={index === current ? 'slide active' : 'slide'}
-            key={index}
-          >
-            {index === current && (
-              <>
-                <div className="text">{slide.text}</div>
-                <img 
-                  src={slide.image} 
-                  alt='dish' 
-                  className='image' 
-                />
-              </>
-            )}
-          </div>
+          <LazyLoad key={index} height={200} once>
+            <div
+              className={`slide ${index === current ? 'active' : ''}`}
+              style={{ animationDelay: `${index * 0.2}s` }}
+            >
+              {index === current && (
+                <>
+                  <div className="text">{slide.text}</div>
+                  <img 
+                    src={slide.image} 
+                    alt='dish' 
+                    className='image' 
+                  />
+                </>
+              )}
+            </div>
+          </LazyLoad>
         ))}
       </div>
       <button className='right-arrow' onClick={nextSlide}>
