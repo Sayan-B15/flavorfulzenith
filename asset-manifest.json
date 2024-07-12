@@ -1,21 +1,24 @@
 {
   "files": {
-    "main.css": "/flavorfulzenith/static/css/main.fcafafec.css",
-    "main.js": "/flavorfulzenith/static/js/main.0d42626e.js",
+    "main.css": "/flavorfulzenith/static/css/main.1fc04f89.css",
+    "main.js": "/flavorfulzenith/static/js/main.87ebae55.js",
     "static/js/453.15a1befc.chunk.js": "/flavorfulzenith/static/js/453.15a1befc.chunk.js",
-    "static/media/pizza.jpg": "/flavorfulzenith/static/media/pizza.1a224909a0b1e60e8a12.jpg",
-    "static/media/menupage0.jpeg": "/flavorfulzenith/static/media/menupage0.08080548f38d7812d0aa.jpeg",
-    "static/media/menupage1.jpeg": "/flavorfulzenith/static/media/menupage1.8e48925fd9639b031e74.jpeg",
-    "static/media/restimg.jpg": "/flavorfulzenith/static/media/restimg.bde78275e79cc862f9d1.jpg",
-    "static/media/sushi.webp": "/flavorfulzenith/static/media/sushi.7a03addb90999ed647ed.webp",
-    "static/media/burger.webp": "/flavorfulzenith/static/media/burger.196c7f981464450a1205.webp",
+    "static/media/biriyani.webp": "/flavorfulzenith/static/media/biriyani.202ac6033d5ee5590539.webp",
+    "static/media/sushi.webp": "/flavorfulzenith/static/media/sushi.f943c9f6fd7c215fb674.webp",
+    "static/media/pasta.webp": "/flavorfulzenith/static/media/pasta.866c7f4387b65fb42db4.webp",
+    "static/media/michael.webp": "/flavorfulzenith/static/media/michael.55eae7c262438ae8bf68.webp",
+    "static/media/sarah.webp": "/flavorfulzenith/static/media/sarah.fa07558c2ce8d1733d63.webp",
+    "static/media/mico.png": "/flavorfulzenith/static/media/mico.bd35c8eec342c3763e6e.png",
+    "static/media/fish.webp": "/flavorfulzenith/static/media/fish.7423aa06c7c5bb28c038.webp",
+    "static/media/rogan.webp": "/flavorfulzenith/static/media/rogan.e59f8188c0eb4d6cdeb6.webp",
+    "static/media/kofta.webp": "/flavorfulzenith/static/media/kofta.ca449f5e463fdb9444c6.webp",
     "index.html": "/flavorfulzenith/index.html",
-    "main.fcafafec.css.map": "/flavorfulzenith/static/css/main.fcafafec.css.map",
-    "main.0d42626e.js.map": "/flavorfulzenith/static/js/main.0d42626e.js.map",
+    "main.1fc04f89.css.map": "/flavorfulzenith/static/css/main.1fc04f89.css.map",
+    "main.87ebae55.js.map": "/flavorfulzenith/static/js/main.87ebae55.js.map",
     "453.15a1befc.chunk.js.map": "/flavorfulzenith/static/js/453.15a1befc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fcafafec.css",
-    "static/js/main.0d42626e.js"
+    "static/css/main.1fc04f89.css",
+    "static/js/main.87ebae55.js"
   ]
 }
